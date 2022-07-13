@@ -11,15 +11,17 @@
 	* Back-end: Docker, POXIS, DNS, Cloudflare, Plex,
 
 ## Other Ideas
-* More JS
+* More JS - What about [Vue](https://vuejs.org/)? What about [Node.js](https://nodejs.org/)
 * More React
 * Blog Section
-* Music Listening Widget
-* Video Game Playing Widget
-* Live Demo of Server Services
+* Music Now Playinig Widget - Examples [here](https://github.com/kylewelsby/now-playing-widget), [here](https://github.com/cj123/lastfm-nowplaying-widget), [here](https://github.com/devteaminc/Last.fm-Now-Playing-Widget), 
+* Github Widget - Examples [here](https://github.com/devteaminc/Last.fm-Now-Playing-Widget), 
+* Live Demo of Server Services/Server Frontends
+* Dark Mode
 
 ## **Tools Used**
-[Icon Monstr](https://iconmonstr.com/)
+[Bootstrap 5](https://getbootstrap.com/) - Mobile-optimized toolkit for front-end web design.
+[Icon Monstr](https://iconmonstr.com/) - Twitter/Github/Linkedin/Discord Icons
 
 ## **Skills Acquired**
 ### HTML/CSS
