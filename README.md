@@ -23,6 +23,7 @@
 [Bootstrap 5](https://getbootstrap.com/) - Mobile-optimized toolkit for front-end web design.
 [Icon Monstr](https://iconmonstr.com/) - Twitter/Github/Linkedin/Discord Icons
 [Gitignore.io](https://www.toptal.com/developers/gitignore/) - For creating a good .gitignore file
+[Favicon Generator](https://realfavicongenerator.net) - Great Favicon generator.
 
 ## **Skills Acquired**
 ### HTML/CSS
