@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+sitemap:https://corbet.app/sitemap.xml
+sitemap:https://corbet.app/sitemap-1.xml
+sitemap:https://corbet.app/sitemap-2.xml
+sitemap:https://corbet.app/sitemap-3.xml
+sitemap:https://corbet.app/sitemap-4.xml
+sitemap:https://corbet.app/sitemap-5.xml
+sitemap:https://corbet.app/sitemap-6.xml
+sitemap:https://corbet.app/sitemap-7.xml
+sitemap:https://corbet.app/sitemap-8.xml
+sitemap:https://corbet.app/sitemap-9.xml
+sitemap:https://corbet.app/sitemap-10.xml
+sitemap:https://corbet.app/sitemap-11.xml
+sitemap:https://corbet.app/sitemap-12.xml
+sitemap:https://corbet.app/sitemap-13.xml
+sitemap:https://corbet.app/sitemap-14.xml
+sitemap:https://corbet.app/sitemap-15.xml
+sitemap:https://corbet.app/sitemap-16.xml

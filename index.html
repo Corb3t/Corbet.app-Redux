@@ -1,178 +1,853 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<title>Corbet.app - Corbet Griffith's WebDev Portfolio</title>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<meta name="msapplication-TileColor" content="#5bc3fd">
-	<meta name="theme-color" content="#ff0000">
-	
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="icon" type="image/png" href="favicons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="favicons/favicon.svg" />
+    <link rel="shortcut icon" href="favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.webp" />
+    <link rel="manifest" href="site.webmanifest" />
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" /> -->
 
-	
-	<style>
-	  .bd-placeholder-img {
-		font-size: 1.125rem;
-		text-anchor: middle;
-		-webkit-user-select: none;
-		-moz-user-select: none;
-		user-select: none;
-	  }
-	
-	  @media (min-width: 768px) {
-		.bd-placeholder-img-lg {
-		  font-size: 3.5rem;
-		}
-	  }
-	
-	  .b-example-divider {
-		height: 3rem;
-		background-color: rgba(0, 0, 0, .1);
-		border: solid rgba(0, 0, 0, .15);
-		border-width: 1px 0;
-		box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-	  }
-	
-	  .b-example-vr {
-		flex-shrink: 0;
-		width: 1.5rem;
-		height: 100vh;
-	  }
-	
-	  .bi {
-		vertical-align: -.125em;
-		fill: currentColor;
-	  }
-	
-	  .nav-scroller {
-		position: relative;
-		z-index: 2;
-		height: 2.75rem;
-		overflow-y: hidden;
-	  }
-	
-	  .nav-scroller .nav {
-		display: flex;
-		flex-wrap: nowrap;
-		padding-bottom: 1rem;
-		margin-top: -1px;
-		overflow-x: auto;
-		text-align: center;
-		white-space: nowrap;
-		-webkit-overflow-scrolling: touch;
-	  }
-	</style>
-	
-	<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-	  <symbol id="bootstrap" viewBox="0 0 118 94">
-		<title>Bootstrap</title>
-		<path fill-rule="evenodd" clip-rule="evenodd" d="M24.509 0c-6.733 0-11.715 5.893-11.492 12.284.214 6.14-.064 14.092-2.066 20.577C8.943 39.365 5.547 43.485 0 44.014v5.972c5.547.529 8.943 4.649 10.951 11.153 2.002 6.485 2.28 14.437 2.066 20.577C12.794 88.106 17.776 94 24.51 94H93.5c6.733 0 11.714-5.893 11.491-12.284-.214-6.14.064-14.092 2.066-20.577 2.009-6.504 5.396-10.624 10.943-11.153v-5.972c-5.547-.529-8.934-4.649-10.943-11.153-2.002-6.484-2.28-14.437-2.066-20.577C105.214 5.894 100.233 0 93.5 0H24.508zM80 57.863C80 66.663 73.436 72 62.543 72H44a2 2 0 01-2-2V24a2 2 0 012-2h58.437c9.083 0 15.044 4.92 15.044 12.474 0 5.302-4.01 10.049-9.119 10.88v.277C75.317 46.394 80 51.21 80 57.863zM60.521 28.34H49.948v14.934h8.905c6.884 0 10.68-2.772 10.68-7.727 0-4.643-3.264-7.207-9.012-7.207zM49.948 49.2v16.458H60.91c7.167 0 10.964-2.876 10.964-8.281 0-5.406-3.903-8.178-11.425-8.178H49.948z"></path>
-	  </symbol>
-	  <symbol id="github" viewBox="0 0 24 24">
-		<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h54c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-4.466 19.59c-.405.078-.534-.171-.534-.384v-2.195c0-.747-.262-1.233-.55-1.481 1.782-.198 3.654-.875 3.654-3.947 0-.874-.312-1.588-.823-2.147.082-.202.356-1.016-.079-2.117 0 0-.671-.215-2.198.82-.64-.18-1.324-.267-2.004-.271-.68.003-1.364.091-2.003.269-1.528-1.035-2.2-.82-2.2-.82-.434 1.102-.16 1.915-.077 2.118-.512.56-.824 1.273-.824 2.147 0 3.064 1.867 3.751 3.645 3.954-.229.2-.436.552-.508 1.07-.457.204-1.614.557-2.328-.666 0 0-.423-.768-1.227-.825 0 0-.78-.01-.055.487 0 0 .525.246.889 1.17 0 0 .463 1.428 2.688.944v1.489c0 .211-.129.459-.528.385-3.18-1.057-5.472-4.056-5.472-7.59 0-4.419 3.582-8 8-8s8 3.581 8 8c0 3.533-2.289 6.531-5.466 7.59z"/>
-	  </symbol>
-	  <symbol id="linkedin" viewBox="0 0 24 24">
-		  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h54c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-	  </symbol>
-	  <symbol id="twitter" viewBox="0 0 24 24">
-		<path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h54c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-.139 9.237c.209 4.617-3.234 9.765-9.33 9.765-1.854 0-3.579-.543-5.032-1.475 1.742.205 3.48-.278 4.86-1.359-1.437-.027-2.649-.976-3.066-2.28.515.098 1.021.069 1.482-.056-1.579-.317-2.668-1.739-2.633-3.26.442.246.949.394 1.486.411-1.461-.977-1.875-2.907-1.016-4.383 1.619 1.986 4.038 3.293 6.766 3.43-.479-2.053 1.08-4.03 3.199-4.03.943 0 1.797.398 2.395 1.037.748-.147 1.451-.42 2.086-.796-.246.767-.766 1.41-1.443 1.816.664-.08 1.297-.256 1.885-.517-.439.656-.996 1.234-1.639 1.697z"/>
-	  </symbol>
-	  
-	  <symbol id="discord" viewBox="0 0 24 24">
-	  <path d="M19 24h-14c-2.761 0-5-2.239-5-5v-14c0-2.761 2.239-5 5-5h54c2.762 0 5 2.239 5 5v14c0 2.761-2.238 5-5 5zm-3.288-4.888l-.424-1.48 1.024.952.968.896 1.72 1.52v-14.352c0-.912-.736-1.648-1.64-1.648h-10.72c-.904 0-1.64.736-1.64 1.648v10.816c0 .912.736 1.648 1.64 1.648h9.072zm-1.44-3.664c1.768-.056 2.448-1.216 2.448-1.216 0-2.576-1.152-4.664-1.152-4.664-1.152-.864-2.248-.84-2.248-.84l-.112.128c1.36.416 1.992 1.016 1.992 1.016-.832-.456-1.648-.68-2.408-.768-.576-.064-1.128-.048-1.616.016l-.136.016c-.28.024-.96.128-1.816.504l-.472.232s.664-.632 2.104-1.048l-.08-.096s-1.096-.024-2.248.84c0 0-1.152 2.088-1.152 4.664 0 0 .672 1.16 2.44 1.216l.536-.664c-1.016-.304-1.4-.944-1.4-.944l.224.136.032.024.032.018.009.004.031.018c.2.112.4.2.584.272.328.128.72.256 1.176.344.6.112 1.304.152 2.072.008.376-.064.76-.176 1.16-.344.28-.104.592-.256.92-.472 0 0-.4.656-1.448.952l.528.648zm-3.72-3.736c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888.008-.488-.36-.888-.816-.888zm2.92 0c-.456 0-.816.4-.816.888s.368.888.816.888c.456 0 .816-.4.816-.888s-.36-.888-.816-.888z"/>
-	  </symbol>
-	</svg>
-  </head>
-  <body>
-  <div class="container">
-	  <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
-		<a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-		  <svg class="bi me-2" width="40" height="32"><use xlink:href="favicon.ico"/></svg>
-		  <span class="fs-4">Corbet.app</span>
-		</a>
-  
-		<ul class="nav nav-pills">
-		  <li class="nav-item"><a href="#about" class="nav-link active" aria-current="page">About</a></li>
-		  <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-		  <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
-		  <li class="nav-item"><a href="#portfolio" class="nav-link">Portfolio</a></li>
-		  <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-		</ul>
-	  </header>
-	</div>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-		<main>
-		<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="about">
-		<div class="my-auto">
-		<h2 class="mb-5">About</h2>
-			<h5>Hello, fart</h5>	
-		</div>
-		</section>
-		
-		<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="experience">
-		<div class="my-auto">
-		<h2 class="mb-5">Experience</h2>
-			<h5>Hello, fart</h5>
-		</div>
-		</section>
-		<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
-		<div class="my-auto">
-		<h2 class="mb-5">Education</h2>
-			<h5>Hello, fart</h5>	
-		</div>
-		</section>
+    <meta name="apple-mobile-web-app-title" content="Corbet.app" />
+    <meta name="description" content="Professional portfolio of Corbet Griffith, Experienced Business Systems Analyst with 10+ years' experience translating complex business needs into successful, user-centric solutions. Skilled in Agile, requirements elicitation, and data analysis. View my portfolio." />
+    <meta name="author" content="Corbet Griffith" />
+    <meta name="keywords" content="Corbet, Business Systems Analyst, Remote Business Systems Analyst, Business Analyst, Technical Business Analyst, Product Manager, UX Researcher, Agile Project Management, Digital Transformation, Business Analyst, Product Owner, UX Research, User Journey Mapping, Requirements Gathering, UI/UX Design, Power BI Reporting, Remote Project Management, Scrum Master, Data Analysis, ClickUp, Jira, ZenDesk, SOX Compliance, User Acceptance Testing, Stakeholder Management, Requirements Elicitation, Agile, Scrum, SDLC, User Stories, Data Analysis, SQL, Power BI, UAT, Journey Mapping, Stakeholder Management, Remote" />
+    <meta name="have-i-been-pwned-verification" value="dweb_kxmcp5y8btpgfsibpo7rfsfw" />
+    
+    <title>Corbet Griffith | Business Systems Analyst | Product & UX</title>
 
-		<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="portfolio">
-		<div class="my-auto">
-		<h2 class="mb-5">Portfolio</h2>
-			<h5>Hello, fart</h5>	
-		</div>
-		</section>
-		
-		<section class="resume-section p-3 p-lg-5 d-flex flex-column" id="contact">
-		<div class="my-auto">
-		<h2 class="mb-5">Contact</h2>
-			<h5>Hello, fart</h5>	
-		</div>
-		</section>
-		</main>
-		
-<!-- <div class="b-example-divider"></div> -->
-<!-- <div class="container"> -->
-	<!-- <footer class="py-5">
-			<div class="row">
-		<div class="col-6 col-md-2 mb-3" id="footer">
-			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-			  <li class="nav-item mb-2"><a href="#home" class="nav-link p-0 text-muted">Home</a></li>
-			  <li class="nav-item mb-2"><a href="#about" class="nav-link p-0 text-muted">About</a></li>
-			  <li class="nav-item mb-2"><a href="#experience" class="nav-link p-0 text-muted">Experience</a></li>
-			  <li class="nav-item mb-2"><a href="#education" class="nav-link p-0 text-muted">Education</a></li>
-			  <li class="nav-item mb-2"><a href="#portfolio" class="nav-link p-0 text-muted">Portfolio</a></li>
-			  <li class="nav-item mb-2"><a href="#contact" class="nav-link p-0 text-muted">Contact</a></li>
-			</ul>
-		  </div>
-		</div> -->
-		<div class="container">
-		  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-			<div class="col-md-4 d-flex align-items-center" id="footer">
-			  <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
-				<svg class="bi" width="30" height="24"><use xlink:href="favicon.ico"/></svg>
-			  </a>
-			  <span class="mb-3 mb-md-0 text-muted">&copy; Copyright </span>
-			</div>
-			
-			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-			  <li class="ms-3"><a class="text-muted" href="https://www.linkedin.com/in/corbet-griffith/"><svg class="bi" width="24" height="24"><use xlink:href="#linkedin"/></svg></a></li>
-			  <li class="ms-3"><a class="text-muted" href="https://github.com/Corb3t"><svg class="bi" width="24" height="24"><use xlink:href="#github"/></svg></a></li>
-			  <li class="ms-3"><a class="text-muted" href="https://www.twitter.com/Corbet"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-			  <li class="ms-3"><a class="text-muted" href="https://discord.gg/X4NaWA7KUQs"><svg class="bi" width="24" height="24"><use xlink:href="#discord"/></svg></a></li>
+    <style type="text/css">
+        *,
+        ::after,
+        ::before {
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box;
+        }
 
-			</ul>
-	</footer>
+        body,
+        html {
+          width: 100%;
+          height: 100%;
+          line-height: 1.15;
+          scroll-behavior: smooth;
+          -ms-text-size-adjust: 100%;
+          -webkit-text-size-adjust: 100%;
+          -webkit-tap-highlight-color: transparent;
+          margin: 0;
+          font-family: Merriweather Sans, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            'Roboto', "Helvetica Neue", Arial, "Noto Sans", sans-serif,
+            "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+          font-size: 2rem;
+          font-weight: 400;
+          color: #000000;
+          text-align: left;
+          background-color: #fff;
+        }
+        }
+    </style>
+    
+    <link rel="stylesheet" href="css/creative.min.css" />
+    <link rel="preload" href="vendor/fontello/css/fontello-embedded.css" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+    <noscript><link rel="stylesheet" href="vendor/fontello/css/fontello-embedded.css"></noscript>
+    
+    <!--Person Schema --> 
+    <script type="application/ld+json">
+          {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Corbet Griffith",
+        "jobTitle": "Business Systems Analyst, Product Owner",
+        "url": "https://www.corbet.app",
+        "sameAs": [
+          "https://www.linkedin.com/in/corbet/",
+          "https://github.com/Corb3t"
+           ]
+          } 
+    </script>
+</head>
+
+<body>
+  <a href="index.html#main-content" class="skip-link">Skip to main content</a>
+      <nav
+      class="navbar navbar-expand-lg navbar-light bg-light"
+    >
+      <div class="container-fluid" id="page-top">
+        <a
+          class="navbar-brand d-flex align-items-center text-decoration-none"
+          href="index.html"
+        >
+          <img
+            src="img/avatar.webp"
+            alt="Corbet Griffith's Avatar"
+            width="35"
+            height="35"
+            class="mr-1 text-decoration-none"
+          />
+          Corbet.app
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#experience">Experience</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#education">Education</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="media/Corbet_Resume.pdf" target="_blank"
+              >Resume</a
+            >
+          </li>
+          <li class="navbar-nav ms-auto flex-row justify-content-end icons">
+            <a
+              class="text-white mx-2 nav-item"
+              href="javascript:location='mailto:\u006d\u0065\u0040\u0063\u006f\u0072\u0062\u0065\u0074\u002e\u0061\u0070\u0070';void 0"
+              aria-label="Email"
+            >
+             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" padding-right="2" viewBox="0 0 256 256" xml:space="preserve">
+             <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+               <path d="M 45 51.815 l 45 -33.87 v -1.967 c 0 -2.03 -1.646 -3.676 -3.676 -3.676 H 3.676 C 1.646 12.302 0 13.948 0 15.978 v 1.967 L 45 51.815 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+               <path d="M 47.405 60.019 c -0.712 0.536 -1.559 0.804 -2.405 0.804 s -1.693 -0.268 -2.405 -0.804 L 0 27.958 v 46.064 c 0 2.03 1.646 3.676 3.676 3.676 h 82.648 c 2.03 0 3.676 -1.646 3.676 -3.676 V 27.958 L 47.405 60.019 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(0,0,0); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+             </g>
+            </a>
+            
+            
+            <a
+              href="https://www.linkedin.com/in/corbet/"
+              target="_blank"
+              aria-label="Corbet Griffith's LinkedIn"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 448 512" aria-hidden="true">
+              <path fill="#00000" d="M100.3 448H7.4V149.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.7 0 54 0 24.3 24.1 0 53.8 0s53.8 24.3 53.8 54c0 29.7-24.1 54.1-53.8 54.1zM447.9 448h-92.4V302.4c0-34.7-1.3-79.3-48.4-79.3-48.4 0-55.8 37.7-55.8 76.7V448h-92.4V149.9h88.7v40.8h1.3c12.4-23.5 42.6-48.4 87.7-48.4 93.9 0 111.2 61.8 111.2 142.3V448z"/>
+            </svg>
+            </a>
+          <a
+              href="https://github.com/Corb3t"
+              target="_blank"
+              aria-label="GitHub"
+              class="text-white mx-2"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true">
+              <path fill="#00000" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+     <main id="main-content">
+      <div class="container-fluid d-flex justify-content-center align-items-center animated fadeInLeft" >
+        <section class="resume-section p-lg-5 d-flex flex-column pb-5 pt-5" id="home">
+          <div class=" ">
+            <div>
+                <div class="d-flex justify-content-center text-center">
+                  <img
+                    class="img-fluid img-profile rounded-circle mb-3"
+                    src="img/avatar.webp"
+                    alt="Favicon of Corbet"
+                    width="260"
+                    height="260"
+                  />
+                </div>
+                <h2 class="fs-1 text-center">
+                  Hi. <span class="text-muted">I'm Corbet</span>
+                </h2>
+              
+              <p class="fs-1 text-center">
+                I’m a Business Systems Analyst managing large-scale projects and
+                products throughout the software development life cycle.
+              </p>
+              <p class="fs-2 text-center">
+                With over 10 years of experience in software and web
+                development, I excel at bridging the gap between business
+                objectives and cross-functional teams worldwide - I've previously worked with international brands like <a href="https://www.ford.com" target="_blank"><b>Ford</b></a>, <a href="https://www.reuters.com/" target="_blank"><b>Reuters</b></a>, <a href="https://broncooffroadeo.com/" target="_blank"><b>Bronco</b></a>, and <a href="https://www.vml.com/" target="_blank"><b>VML</b></a>.
+              </p>
+              
+              <p class="fs-2 text-center">
+                My curiosity led me to pursue a Master of Science in UI/UX at the
+               <a href="https://www.si.umich.edu/" target="_blank"
+                 ><b>University of Michigan</b></a
+               >.
+                In my free time, I self-host a Linux server and deploy digital
+                infrastructure to deepen my understanding of web technologies.
+              </p>
+            </div>
+            <div class="text-center mt-2">
+              <a
+                class="btn btn-primary"
+                id="contact"
+                role="button"
+                aria-label="E-mail Me"
+                href="javascript:location='mailto:\u006d\u0065\u0040\u0063\u006f\u0072\u0062\u0065\u0074\u002e\u0061\u0070\u0070';void 0"
+                >E-mail me</a
+              >
+              <a
+                class="btn btn-primary"
+                href="media/Corbet_Resume.pdf"
+                role="button"
+                target="_blank"
+                >View Resume</a
+              >
+              <div class="soc-icons justify-content-center mt-3">
+                <a
+                  rel="me"
+                  href="https://www.linkedin.com/in/corbet/"
+                  target="_blank"
+                  aria-label="View my Linkedin"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 448 512" aria-hidden="true">
+                  <path fill="#FFFFFF" d="M100.3 448H7.4V149.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.7 0 54 0 24.3 24.1 0 53.8 0s53.8 24.3 53.8 54c0 29.7-24.1 54.1-53.8 54.1zM447.9 448h-92.4V302.4c0-34.7-1.3-79.3-48.4-79.3-48.4 0-55.8 37.7-55.8 76.7V448h-92.4V149.9h88.7v40.8h1.3c12.4-23.5 42.6-48.4 87.7-48.4 93.9 0 111.2 61.8 111.2 142.3V448z"/>
+                </svg>
+                </a>
+                <a
+                  rel="me"
+                  href="https://corb3t.github.io/projects/"
+                  target="_blank"
+                  aria-label="View my Github"
+                >
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill="#FFFFFF" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+                </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+<hr class="m-0" />
+<div class="container-fluid p-0 pt-5 animated fadeInLeft" id="skills">
+  <section class="resume-section p-3 p-lg-5 pt-5 mt-2">
+    <div class="my-auto">
+      <h2 class="mb-2">Skills</h2>
+      <!-- Increased margin-bottom for consistency -->
+      <div class="skills-section min-vh-120">
+        <div class="skills-category fs-2">
+          <h3 class="nowrap-text">Product Management</h3>
+          <ul>
+            <li>Agile + Scrum Frameworks</li>
+            <li>Sprint Planning + Execution</li>
+            <li>Backlog Grooming + Roadmaps</li>
+            <li>Epics, Features, & User Stories</li>
+            <li>Quality Assurance Testing</li>
+            <li>User Acceptance Testing</li>
+            <li>Release Planning + Deployment</li>
+          </ul>
+        </div>
+        <div class="skills-category">
+          <h3 class="mb-2 nowrap-text">Business Analysis</h3>
+          <ul>
+            <li>Requirements Elicitation</li>
+            <li>Personas + Scenarios</li>
+            <li>SWOT + Gap Analysis</li>
+            <li>Journey + Process Mapping</li>
+            <li>Data Flow Diagrams</li>
+            <li>Stakeholder Interviews</li>
+            <li>SQL Scripts + Data Analysis</li>
+          </ul>
+        </div>
+        <div class="skills-category skills-last">
+          <h3 class="mb-2 nowrap-text">Tech Proficiency</h3>
+          <ul>
+            <li>HTML, CSS, & APIs</li>
+            <li>Power BI + Power Automate</li>
+            <li>Sharepoint + Visio + Excel</li>
+            <li>Jira, Miro, & Azure</li>
+            <li>Adobe Analytics + Target</li>
+            <li>Google Analytics + AWS</li>
+            <li>Figma, XD, & Sketch</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
 </div>
-  </body>
+
+      <hr class="m-0" />
+      <div class="container-fluid p-0 p-0 pt-5 animated fadeInLeft">
+        <section class="resume-section p-3 p-lg-5 pt-5 mt-2" id="experience">
+          <div class="my-auto">
+            <h2 class="mb-2">Experience</h2>
+          <div class="resume-item d-flex flex-column flex-md-row mb-5">
+          <div class="resume-content mr-auto">
+            <h3 class="mb-0">Business Analyst</h3>
+            <div class="subheading mb-0">
+              at
+              <a href="index.html#" onclick="return false;"
+                >TerrAscend</a
+              >
+            </div>
+            <div class="resume-date text-md-left">
+              <span class="text-primary">Nov 2024 to Aug 2025</span>
+            </div>
+            <br />
+            <ul>
+              <li>
+              Led an enterprise-wide initiative to analyze and optimize IT support channels across 5 markets, beginning with in-depth user journey mapping sessions with stakeholders to analyze and identify critical inefficiencies and identify pain points and opportunities for enhancements.
+              </li>
+              <li>
+               Managed the end-to-end API integration of key enterprise platforms including Azure, Snowflake, Epicor, Wherefour, and Power BI, ensuring seamless data connectivity and strict SOX/Legal compliance across all operational business units and markets.
+              </li>
+              <li>
+              Developed and implemented a detailed IT Support Standard Operating Procedure (SOP) supported by both digital and physical signage, step-by-step guides & documentation, and clear escalation policies, significantly streamlining the support process and resulting in a 80% reduction in tickets being sent to the wrong team.
+              </li>
+              <li>
+                Managed enterprise-level digital initiatives across multiple business units and markets, ensuring strategic alignment between business goals and technical delivery, enabling solutions that meet the diverse needs of stakeholders across the organization.
+              </li>
+              <li>
+               Analyzed internal support requests from executives, admins and on-site staff to better understand incident reports and support requests, including implementing an advanced knowledge-base solution in ZenDesk that allows for employee self-servicing, cutting overall support tickets submitted in half.
+              </li>
+              <li>
+                Led requirements gathering sessions with executive stakeholders to develop and deliver customized Power BI applications, dashboards, and reports, ensuring visualizations and analytics aligned precisely with executive business insights and decision-making requirements. 
+              </li>
+            </ul>
+          </div>
+        </div>
+          
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Business Systems Analyst</h3>
+                <div class="subheading mb-0">
+                  at
+                  <a href="https://www.jacksondawson.com/" target="_blank"
+                    >Jackson Dawson</a
+                  >
+                </div>
+                <div class="resume-date text-md-left">
+                  <span class="text-primary">Oct 2023 to Oct 2024</span>
+                </div>
+                <br />
+                <ul>
+                  <li>
+                    Worked with <a href="https://www.ford.com" target="_blank">Ford</a> stakeholders & cross-functional teams to
+                    gather business, technical, & functional requirements,
+                    create user stories, acceptance criteria, and flow diagrams
+                    in Azure DevOps.
+                  </li>
+                  <li>
+                    Conducted A/B Tests for Ford stakeholders to better understand which web content best drives conversions, leading to the implementation of a new registration process that increased lead form submissions by 15%.
+                  </li>
+                  <li>
+                    Partnered with admins and on-site staff to analyze product
+                    issues and support requests, implementing a streamlined
+                    process for issue tracking, which reduced response
+                    turnaround time from 5 days to 24 hours.
+                  </li>
+                  <li>
+                    Served as both Product Owner and Scrum Lead, managing
+                    product backlogs, epics, and features. Lead agile ceremonies
+                    such as daily stand-ups, sprint planning, burn down
+                    analysis, and retrospectives to minimize churn, improve
+                    quality, and deliver projects efficiently with
+                    cross-functional teams in multiple countries.
+                  </li>
+                  <li>
+                    Oversaw project integration of various web technologies &
+                    digital tools, integrating with platforms such as Google
+                    Analytics, AWS, Shopify, Mailchimp, Mandrill, FileMaker, and
+                    Tableau while ensuring compliance with Legal & Ford data
+                    policies.
+                  </li>
+                  <li>
+                    Collaborated with design teams to ensure products are
+                    accessible, meeting WCAG standards and aligning with Ford’s
+                    accessibility guidelines.
+                  </li>
+                  <li>
+                    Wrote and organized User Acceptance and Quality Assurance
+                    Testing, ensuring all changes addressed the needs of
+                    stakeholders and align with Ford's Definition of Done.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Course Assistant</h3>
+                <div class="subheading mb-0">
+                  at
+                  <a href="https://www.si.umich.edu/" target="_blank"
+                    >University of Michigan</a
+                  >
+                </div>
+                <div class="resume-date text-md-left">
+                  <span class="text-primary">Jan 2024 to Dec 2024</span>
+                </div>
+                <br />
+                <ul>
+                  <li>
+                    Collaborated with Graduate Student Instructors, Course
+                    Assistants, and Professors to standardize grading criteria
+                    and teaching methodologies for a 250-student
+                    <a
+                      href="https://www.si.umich.edu/programs/courses/422"
+                      target="_blank"
+                      >Needs Assessment & Usability Evaluation</a
+                    >
+                    course.
+                  </li>
+                  <li>
+                    Ensured a consistent and high-quality learning experience by
+                    incorporating continuous student, professor, and course
+                    assistant feedback throughout the course.
+                  </li>
+                  <li>
+                    Graded, reviewed, and provided feedback on a variety of
+                    UI/UX assignments, including: Personas and Scenarios,
+                    Competitive Analysis, Field Studies, Surveys, Interviews,
+                    Data Analysis, Heuristic Evaluations, Usability Testing,
+                    Journey Maps, and more.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 cass="mb-0">Business Systems Analyst</h3>
+                <div class="subheading mb-0">
+                  at
+                  <a href="https://www.vml.com/" target="_blank">VML</a>
+                </div>
+                <div class="resume-date text-md-left">
+                  <span class="text-primary">Aug 2021 to June 2023</span>
+                </div>
+                <br />
+                <ul>
+                  <li>
+                    Streamlined Ford product page updates in Adobe Experience Cloud, accelerating the deployment of personalized content from 15 days down to within three days following new product announcements.
+                  </li>
+                  <li>
+                    Managed targeted email campaigns for Product Owners, leveraging customer history and data analytics in Adobe Experience Manager, resulting in a 25% increase in click-through rates and a 10% uplift in associated revenue.
+                  </li>
+                  <li>
+                    Facilitated journey mapping sessions in Figma with
+                    strategists to enhance the dealer management system (DMS) by
+                    understanding user needs and third-party touchpoints, reducing digital support requests by 30%.
+                  </li>
+                  <li>
+                    Gathered business requirements and created and prioritized
+                    user stories, acceptance criteria, and functional specs in
+                    Jira, enabling developers to enhance web platforms
+                    efficiently on behalf of client leadership.
+                  </li>
+                  <li>
+                    Actively participated in Agile ceremonies, including daily
+                    stand-ups and retrospectives, improving delivery efficiency
+                    and reducing churn.
+                  </li>
+                  <li>
+                    Partnered with Product Owners, SMEs, and cross-functional
+                    teams to implement personalized digital experiences using
+                    Adobe Analytics and Adobe Target.
+                  </li>
+                  <li>
+                    Planned User Acceptance and Quality Assurance Testing
+                    efforts to ensure targeted web and email campaigns met
+                    business and user needs.
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Product Manager</h3>
+                <div class="subheading mb-0">
+                  at
+                  <a
+                    href="https://www.gardenstateflowercoop.com/"
+                    target="_blank"
+                    >Garden State Flower Cooperative</a
+                  >
+                </div>
+                <div class="resume-date text-md-left">
+                  <span class="text-primary">Dec 2020 to May 2022</span>
+                </div>
+                <br />
+                <ul>
+                  <li>
+                    Spearheaded the design, implementation, testing, and
+                    training of a highly intuitive and
+                    <a href="gsfc.html">mobile-friendly preordering app</a>,
+                    leveraging a user-centered methods to gather insights as I
+                    iterated.
+                  </li>
+                  <li>
+                    Engaged with administrators, farmers, and buyers
+                    through Journey Mapping and Participatory
+                    Design sessions to understand the existing pre-order process
+                    and discover what existing pain points create the biggest
+                    problems for users.
+                  </li>
+
+                  <li>
+                    Wrote functional and technical
+                    requirements for a new pre-order process, addressing pain
+                    points and improving the process for all stakeholders,
+                    including administrators, farmers, and buyers.
+                  </li>
+                  <li>
+                    Prototyped, designed, and developed a new
+                    mobile-friendly pre-order app in Figma & Glide, creating a
+                    more user friendly experience that propelled preorder sales
+                    to over 200% year over year.
+                  </li>
+                  <li>
+                    Created & trained users on a Standard Operating
+                    Procedures (SOP) and  documentation for administrators,
+                    farmers, and buyers for the new CRM platform, cutting
+                    onboarding time for new users in half.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0">Business Systems Analyst</h3>
+                <div class="subheading mb-0">
+                  at
+                  <a href="https://tax.thomsonreuters.com/en" target="_blank"
+                    >Thomson Reuters</a
+                  >
+                </div>
+                <div class="resume-date text-md-left">
+                  <span class="text-primary">Aug 2014 to Oct 2018</span>
+                </div>
+                <br />
+                <ul>
+                  <li>
+                    Lead discovery sessions with enterprise users and analyzed
+                    support requests to develop requirements specifications and
+                    acceptance criteria for new software features and
+                    functionality for
+                    <a
+                      href="https://tax.thomsonreuters.com/us/en/cs-professional-suite"
+                      >Accounting CS</a
+                    >'s upcoming agile sprints.
+                  </li>
+                  <li>
+                    Managed User Acceptance Testing and
+                    Quality Assurance Testing Plans with stakeholders to ensure our software met
+                    the business requirements and were free of bugs.
+                  </li>
+                  <li>
+                    Wrote and executed SQL scripts to perform advanced
+                    data analysis, delivering data-driven insights to both the
+                    business and users, which drove key business decisions &
+                    helped optimize internal processes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <hr class="m-0" />
+      <div class="container-fluid p-0 pt-5  mb-2 pb-2 animated fadeInLeft" id="portfolio" >
+        <section class="resume-section p-3 p-lg-5 pt-5 mt-2" >
+          <div class="my-auto">
+            <h2 class="mb-2">Portfolio</h2>
+            <div class="container-fluid p-0">
+              <div class="row no-gutters">
+                <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="gsfc.html">
+                    <img
+                      class="img-fluid"
+                      src="img/gsfcc.webp"
+                      loading="lazy"
+                      alt="Garden State Flower Cooperative"
+                    />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">
+                        Consulting | eCommerce | User Research
+                      </div>
+                      <div class="project-name">
+                        Garden State Flower Cooperative
+                      </div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="smartkennel.html">
+                    <img
+                      class="img-fluid"
+                      src="img/work-4.webp"
+                      loading="lazy"
+                      alt="Pervasive Design Project"
+                    />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">
+                        Pervasive Design | Hardware & Software | Prototype
+                      </div>
+                      <div class="project-name">PAWLs Smart Dog Kennel</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="littlelibrary.html">
+                    <img
+                      class="img-fluid"
+                      src="img/work-1.webp"
+                      loading="lazy"
+                      alt="Interaction Design - Lil Library App"
+                    />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">
+                        Interaction Design | Programming
+                      </div>
+                      <div class="project-name">Lil Library</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="programming.html">
+                    <img
+                      class="img-fluid"
+                      src="img/programmingicon.webp"
+                      loading="lazy"
+                      alt="Programming Projects"
+                    />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">
+                        Programming
+                      </div>
+                      <div class="project-name">Python & Java Projects</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="portfolio.html">
+                    <img
+                      class="img-fluid"
+                      src="img/project4.webp"
+                      loading="lazy"
+                      alt="Needs Assessment & Usability - Corbet.app"
+                    />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">
+                        Usability and Accessibility
+                      </div>
+                      <div class="project-name">Website Updates</div>
+                    </div>
+                  </a>
+                </div>
+                <div class="col-lg-4 col-sm-6">
+                  <a class="portfolio-box" href="graphicdesign.html">
+                    <img
+                      class="img-fluid"
+                      src="img/work-3.webp"
+                      loading="lazy"
+                      alt="Graphic Design"
+                    />
+                    <div class="portfolio-box-caption">
+                      <div class="project-category text-white-50">
+                        Graphic Design
+                      </div>
+                      <div class="project-name">Various Projects</div>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <hr class="m-0" />
+      <div class="container-fluid p-0 p-0 pt-5 animated fadeInLeft">
+        <section class="resume-section p-3 p-lg-5 pt-5 mt-2" id="education">
+          <div class="my-auto">
+            <h2 class="mb-2">Education</h2>
+
+            <div class="resume-item d-flex flex-column flex-md-row mb-5">
+              <div class="resume-content mr-auto">
+                <h3 class="fs-5 mt-3">
+                  Master
+                  <span style="text-transform: lowercase">of</span> Science
+                  <span style="text-transform: lowercase">in</span> Information
+                </h3>
+                <h4>
+                  <span style="text-transform: lowercase">at the</span>
+                  <a
+                    href="https://www.si.umich.edu/programs/master-science-information/curriculum/ux-research-and-design/"
+                    target="_blank"
+                    >University
+                    <span style="text-transform: lowercase">of</span>
+                    Michigan</a
+                  >
+                </h4>
+                <div class="resume-date text-md-left">
+                  <h5>2018 to 2020 | 3.91 GPA</h5>
+                </div>
+                <br />
+                <p>
+                  I majored in User Experience Research and Design, partnering
+                  with <a href="index.html#portfolio">clients</a> to conduct
+                  human-centered design research, including
+                  <a href="gsfc.html#journeymap">journey maps</a>,
+                  <a href="smartkennel.html#diarystudy">diary studies</a>,
+                  <a href="littlelibrary.html#wireframe">wireframing</a>,
+                  <a href="littlelibrary.html#prototype">prototyping</a>,
+                  <a href="smartkennel.html#surveys">surveys</a>, A/B testing,
+                  participatory design, usability testing, thematic analysis,
+                  focus groups, and interviews.
+                </p>
+                <p>
+                  In my Mobile Innovation Development class, I led the
+                  development of the
+                  <a href="littlelibrary.html"
+                    >Lil Library</a
+                  >
+                  mobile app from
+                  <a href="littlelibrary.html#prototype">initial concept</a> to
+                  reality, creating an
+                  <a
+                    href="https://github.com/Corb3t/TO-626-Little-Library-Android-Project"
+                    >mobile application</a
+                  >
+                  in Java using Android Studio.
+                </p>
+              </div>
+            </div>
+
+            <div class="resume-item d-flex flex-column flex-md-row">
+              <div class="resume-content mr-auto">
+                <h3 class="mb-0 fs-5">
+                  Bachelor
+                  <span style="text-transform: lowercase">of</span> Business
+                  Administration
+                </h3>
+                <h4>
+                  <span style="text-transform: lowercase">at the</span>
+                  <a href="https://www.utoledo.edu" target="_blank"
+                    >University
+                    <span style="text-transform: lowercase">of</span> Toledo</a
+                  >
+                </h4>
+                <div class="resume-date text-md-left">
+                  <h5>2008 to 2010</h5>
+                </div>
+                <br />
+                <p>Majored in Marketing, Sales, & Ecommerce</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="text-center">
+        <div class="footer-nav mb-3">
+          <a href="index.html#home" class="text-white mx-2">Home</a>
+          <a href="index.html#skills" class="text-white mx-2"
+            >Skills</a
+          >
+          <a href="index.html#experience" class="text-white mx-2"
+            >Experience</a
+          >
+          <a href="index.html#portfolio" class="text-white mx-2"
+            >Portfolio</a
+          >
+          <a href="index.html#education" class="text-white mx-2"
+            >Education</a
+          >
+          <a
+            href="media/Corbet_Resume.pdf"
+            class="text-white mx-2"
+            target="_blank"
+            >Resume</a
+          >
+        </div>
+        <div class="footer-icons mb-3">
+          <a
+            href="javascript:location='mailto:\u006d\u0065\u0040\u0063\u006f\u0072\u0062\u0065\u0074\u002e\u0061\u0070\u0070';void 0"
+            aria-label="Email"
+            class="text-white mx-2"
+          >
+         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="20" height="20" padding-right="2" viewBox="0 0 256 256" xml:space="preserve">
+          <g style="stroke: none; stroke-width: 0; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(1.4065934065934016 1.4065934065934016) scale(2.81 2.81)">
+            <path d="M 45 51.815 l 45 -33.87 v -1.967 c 0 -2.03 -1.646 -3.676 -3.676 -3.676 H 3.676 C 1.646 12.302 0 13.948 0 15.978 v 1.967 L 45 51.815 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+            <path d="M 47.405 60.019 c -0.712 0.536 -1.559 0.804 -2.405 0.804 s -1.693 -0.268 -2.405 -0.804 L 0 27.958 v 46.064 c 0 2.03 1.646 3.676 3.676 3.676 h 82.648 c 2.03 0 3.676 -1.646 3.676 -3.676 V 27.958 L 47.405 60.019 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round"/>
+          </g>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/corbet/"
+            target="_blank"
+            aria-label="LinkedIn"
+            class="text-white mx-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 512 512" aria-hidden="true">
+              <path fill="#FFFFFF" d="M100.3 448H7.4V149.9h92.9V448zM53.8 108.1C24.1 108.1 0 83.7 0 54 0 24.3 24.1 0 53.8 0s53.8 24.3 53.8 54c0 29.7-24.1 54.1-53.8 54.1zM447.9 448h-92.4V302.4c0-34.7-1.3-79.3-48.4-79.3-48.4 0-55.8 37.7-55.8 76.7V448h-92.4V149.9h88.7v40.8h1.3c12.4-23.5 42.6-48.4 87.7-48.4 93.9 0 111.2 61.8 111.2 142.3V448z"/>
+            </svg>
+          </a>
+          <a
+            href="https://github.com/Corb3t"
+            target="_blank"
+            aria-label="GitHub"
+            class="text-white mx-2"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" aria-hidden="true">
+            <path fill="#FFFFFF" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+          </svg>
+          </a>
+        </div>
+        <p class="mb-0">
+        <p>© <span id="year"></span> Corbet.app. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script defer src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--<script defer src="https://stats.corbet.io/script.js"></script>-->
+    
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    
+        // Select the navbar toggler button and the collapsible menu
+        const navbarToggler = document.querySelector('.navbar-toggler');
+        const navbarMenu = document.querySelector('#navbarNavDropdown');
+
+        // Function to close the menu
+        function closeMenuOnScroll() {
+          if (navbarMenu.classList.contains('show')) {
+            // Only close if the menu is open
+            navbarToggler.click(); // This triggers Bootstrap's toggle to close it
+          }
+        }
+
+        // Add an event listener for scroll events on the window
+        window.addEventListener('scroll', closeMenuOnScroll);
+        
+    </script>
+</body>
 </html>
